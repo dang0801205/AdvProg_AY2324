@@ -10,7 +10,7 @@ using namespace std;
     Args:
         
     Returns:
-        number (int) : random number in range 1-100
+        number (int) : random numrange 1-100
 ***/
 int generateRandomNumber() {
     int n = rand() % 100 + 1;
@@ -87,7 +87,7 @@ bool checkSuccess(string answer) {
 bool checkContinuePlaying(char isContinued) {
     // TODO: return result after checking player continue playing or not
     bool result = false;
-    if(isContinued == 'y'){
+    if(isContinued == 'y'||isContinued == 'Y'){
         result = true;
     }
     else{
